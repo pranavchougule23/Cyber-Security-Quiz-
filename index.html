@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Security Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Start Screen -->
+        <div id="start-screen" class="card">
+
+            <h1>🔐 Cyber Security Quiz</h1>
+
+            <p>
+                Test your Cyber Security knowledge with
+                10 multiple choice questions.
+            </p>
+
+            <button id="start-btn">
+                Start Quiz
+            </button>
+
+        </div>
+
+        <!-- Quiz Screen -->
+        <div id="quiz-screen" class="card hidden">
+
+            <div class="top-bar">
+
+                <span id="question-number">
+                    Question 1 / 10
+                </span>
+
+                <span id="timer">
+                    ⏱️ 15s
+                </span>
+
+            </div>
+
+            <div class="progress-bar">
+
+                <div id="progress"></div>
+
+            </div>
+
+            <h2 id="question">
+                Question will appear here
+            </h2>
+
+            <div id="options">
+
+                <button class="option-btn"></button>
+                <button class="option-btn"></button>
+                <button class="option-btn"></button>
+                <button class="option-btn"></button>
+
+            </div>
+
+            <button id="next-btn">
+                Next Question
+            </button>
+
+        </div>
+
+        <!-- Result Screen -->
+        <div id="result-screen" class="card hidden">
+
+            <h1>🎉 Quiz Completed</h1>
+
+            <h2 id="score">
+                Score : 0 / 10
+            </h2>
+
+            <p id="message">
+                Good Job!
+            </p>
+
+            <button id="restart-btn">
+                Restart Quiz
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
